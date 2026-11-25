@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Бесплатный пакетный конвертер изображений в PNG. Все файлы остаются в вашем браузере.">
+  <title>Пиксель — изображения в PNG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./" aria-label="Пиксель, на главную"><span class="brand-icon">✳</span> пиксель<span class="brand-dot">.</span></a><span class="top-note"><span class="privacy-dot"></span> Работаем прямо в браузере</span></header>
+  <main>
+    <section class="intro"><div class="eyebrow"><span>✳</span> ПРОСТОЙ КОНВЕРТЕР ИЗОБРАЖЕНИЙ</div><h1>Ваши картинки.<br><span>Теперь в PNG.</span></h1><p>Перетащите файлы, и мы превратим их в PNG.<br class="desktop"> Быстро, бесплатно и без загрузки на сервер.</p></section>
+    <section class="converter" aria-label="Конвертер изображений">
+      <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Выбрать изображения или перетащить их сюда">
+        <input id="fileInput" type="file" accept="image/*" multiple hidden>
+        <div class="upload-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M4 15v3a3 3 0 003 3h10a3 3 0 003-3v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h2>Перетащите изображения сюда</h2><p>или <span class="choose">выберите файлы</span> на устройстве</p><div class="formats">WEBP <span>·</span> JPG <span>·</span> PNG <span>·</span> И ДРУГИЕ</div>
+      </div>
+      <div id="queue" class="queue" hidden><div class="queue-head"><div><h2>Ваши файлы <span id="count"></span></h2><p id="summary" aria-live="polite"></p></div><button id="clear" class="text-button" type="button">Очистить</button></div><ul id="fileList" class="file-list"></ul><div class="actions"><button id="downloadAll" class="primary" type="button" disabled>Скачать всё в ZIP <span>↓</span></button><button id="addMore" class="secondary" type="button">Добавить файлы</button></div></div>
+    </section>
+    <section class="benefits" aria-label="Преимущества"><div><span class="benefit-icon">⌘</span><h3>Хоть целую папку</h3><p>Выбирайте много файлов за раз и скачивайте одним архивом.</p></div><div><span class="benefit-icon">◇</span><h3>Только у вас</h3><p>Изображения не покидают ваше устройство и нигде не сохраняются.</p></div><div><span class="benefit-icon">✳</span><h3>Просто работает</h3><p>Без регистрации, настроек и лишних кнопок.</p></div></section>
+  </main><footer><span>пиксель<span class="brand-dot">.</span></span><p>Сделано для ваших картинок ✳</p><span>WEBP → PNG</span></footer>
+  <script src="app.js"></script>
+</body></html>
